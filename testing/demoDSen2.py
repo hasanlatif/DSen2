@@ -40,7 +40,7 @@ if __name__ == '__main__':
     # Siberia, same area of Fig. 8 in the paper
     print('Siberia')
     im10, im20, imGT = readh5('S2B_MSIL1C_20170725_T43WFQ.mat', imGT=True)
-    print('im 10={}, im_20={}'.format(im10.shape,im20.shape)
+    #print('im 10={}, im_20={}'.format(im10.shape,im20.shape)
     SR20 = DSen2_20(im10, im20)
     # Evaluation against the ground truth on the 20m resolution bands (simulated)
     print('DSen2:')
