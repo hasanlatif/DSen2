@@ -43,7 +43,7 @@ if __name__ == '__main__':
     #print('im 10={}, im_20={}'.format(im10.shape,im20.shape)
     SR20 = DSen2_20(im10, im20)
     # Evaluation against the ground truth on the 20m resolution bands (simulated)
-    print('DSen2:',im10.shape)
+    print('DSen2:',im10.transpose.shape)
     RMSE(SR20, imGT)
     print('Bicubic:')
     RMSE(imresize(im20, 2), imGT)
