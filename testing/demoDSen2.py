@@ -46,7 +46,7 @@ if __name__ == '__main__':
     RMSE(SR20, imGT)
     print('Bicubic:')
     RMSE(imresize(im20, 2), imGT)
-    a=imresize(im20,2)
+    a=imresize(im20,6)
     print('im_20 shape',a.shape)
 
     fig = plt.figure(1)
