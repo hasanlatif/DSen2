@@ -68,7 +68,7 @@ if __name__ == '__main__':
 
     # South Africa, same area of Fig. 9 in the paper
     print('S. Africa')
-    im10, im20, im60, imGT = readh5('S2A_MSIL1C_20171028_T34HCH.mat', im60=True, imGT=True)
+    im10, im20, im60, imGT = readh5('S2B_MSIL1C_20170725_T43WFQ.mat', im60=True, imGT=True)
     SR60 = DSen2_60(im10, im20, im60)
     # Evaluation against the ground truth on the 60m resolution bands (simulated)
     print('DSen2:')
